@@ -14,7 +14,7 @@ import {
 } from "lucide-react"
 import { useState, useEffect, useRef } from "react"
 
-export default function Page() {
+export default function Portfolio() {
   const [activeSection, setActiveSection] = useState("hero")
   const [isVisible, setIsVisible] = useState({})
   const observerRef = useRef(null)
