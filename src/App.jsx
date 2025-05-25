@@ -1,12 +1,12 @@
 
-import Page from './components/page';
+import Portfolio from './components/Portfolio';
 
 
 function App() {
   return (
     <>
   
-      <Page/>
+      <Portfolio/>
     </>
   )
 }
