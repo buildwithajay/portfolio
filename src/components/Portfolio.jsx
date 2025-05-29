@@ -258,7 +258,7 @@ export default function Portfolio() {
           <div className="max-w-4xl mx-auto text-lg text-gray-700 leading-relaxed">
             <p className="mb-6 hover:text-gray-900 transition-colors duration-300">
               I'm a passionate Computer Science student at Maharishi Markandeshwar Deemed to be University, graduating
-              in May 2026 with a strong 8.28 GPA. My journey in frontend development has been driven by a love for
+              in May 2026 with a strong 8.30 GPA. My journey in frontend development has been driven by a love for
               creating intuitive, responsive user interfaces that solve real-world problems.
             </p>
             <p className="hover:text-gray-900 transition-colors duration-300">
