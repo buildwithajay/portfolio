@@ -1,4 +1,4 @@
-name: React CI
+name: Vite React CI
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  build-and-test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,13 +17,14 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '20' # or your version
+        node-version: '20'  # or your Node.js version
 
     - name: Install dependencies
       run: npm ci
 
-    - name: Run tests
-      run: npm test -- --watchAll=false
-
-    - name: Build React app
+    - name: Build Vite app
       run: npm run build
+
+    # Optional: Add tests if available
+    # - name: Run tests
+    #   run: npm run test
