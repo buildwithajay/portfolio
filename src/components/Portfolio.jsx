@@ -175,74 +175,72 @@ export default function Portfolio() {
       </nav>
 
       {/* Hero Section */}
-      <section
-        id="hero"
-        className={`pt-20 pb-16 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${
-          isVisible.hero ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-        }`}
+     <section
+  id="hero"
+  className={`pt-28 pb-24 px-6 sm:px-10 lg:px-16 transition-all duration-1000 ${
+    isVisible.hero ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+  }`}
+>
+  <div className="max-w-7xl mx-auto text-center">
+    <div className="mb-12">
+      <div className="w-36 h-36 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-5xl font-extrabold shadow-lg hover:scale-110 transition-transform duration-300 animate-pulse">
+        AP
+      </div>
+      <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight tracking-tight animate-fade-in-up">
+        Ajay Paudel
+      </h1>
+      <p className="text-2xl sm:text-3xl text-gray-700 mt-4 mb-6 animate-fade-in-up animation-delay-200">
+        Frontend Developer & UI Enthusiast
+      </p>
+      <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in-up animation-delay-400">
+        Passionate about crafting elegant interfaces with React, Tailwind, and JavaScript. Constantly learning and building modern web experiences.
+      </p>
+    </div>
+
+    <div className="flex flex-wrap justify-center gap-5 mb-10 animate-fade-in-up animation-delay-600">
+      <a
+        href="tel:+917042577604"
+        className="flex items-center gap-2 bg-white px-5 py-3 rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
       >
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center">
-            <div className="mb-8">
-              <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-4xl font-bold hover:scale-110 transition-transform duration-300 cursor-pointer animate-pulse">
-                AP
-              </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 animate-fade-in-up">
-                Ajay Paudel
-              </h1>
-              <p className="text-xl sm:text-2xl text-gray-600 mb-8 animate-fade-in-up animation-delay-200">
-                Aspiring Frontend Developer
-              </p>
-              <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-8 animate-fade-in-up animation-delay-400">
-                Skilled in React, Tailwind, and JavaScript. Eager to grow through hands-on experience and contribute to
-                real-world projects.
-              </p>
-            </div>
+        <Phone className="w-5 h-5 text-indigo-600" />
+        <span className="text-gray-800 font-medium">+91 7042577604</span>
+      </a>
+      <a
+        href="mailto:poudelajay547@gmail.com"
+        className="flex items-center gap-2 bg-white px-5 py-3 rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
+      >
+        <Mail className="w-5 h-5 text-indigo-600" />
+        <span className="text-gray-800 font-medium">poudelajay547@gmail.com</span>
+      </a>
+      <a
+        href="https://linkedin.com/in/ajaypaudel/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 bg-white px-5 py-3 rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
+      >
+        <Linkedin className="w-5 h-5 text-indigo-600" />
+        <span className="text-gray-800 font-medium">LinkedIn</span>
+      </a>
+      <a
+        href="https://github.com/buildwithajay"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 bg-white px-5 py-3 rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
+      >
+        <Github className="w-5 h-5 text-indigo-600" />
+        <span className="text-gray-800 font-medium">GitHub</span>
+      </a>
+    </div>
 
-            <div className="flex flex-wrap justify-center gap-4 mb-8 animate-fade-in-up animation-delay-600">
-              <a
-                href="tel:+917042577604"
-                className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300"
-              >
-                <Phone className="w-4 h-4 text-blue-600" />
-                <span className="text-gray-700">+91 7042577604</span>
-              </a>
-              <a
-                href="mailto:poudelajay547@gmail.com"
-                className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300"
-              >
-                <Mail className="w-4 h-4 text-blue-600" />
-                <span className="text-gray-700">poudelajay547@gmail.com</span>
-              </a>
-              <a
-                href="https://linkedin.com/in/ajaypaudel/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300"
-              >
-                <Linkedin className="w-4 h-4 text-blue-600" />
-                <span className="text-gray-700">LinkedIn</span>
-              </a>
-              <a
-                href="https://github.com/buildwithajay"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300"
-              >
-                <Github className="w-4 h-4 text-blue-600" />
-                <span className="text-gray-700">GitHub</span>
-              </a>
-            </div>
+    <button
+      onClick={() => scrollToSection("projects")}
+      className="bg-gradient-to-r from-indigo-500 to-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:scale-105 hover:from-indigo-600 hover:to-blue-700 transition-all duration-300 animate-fade-in-up animation-delay-800"
+    >
+      🚀 View My Work
+    </button>
+  </div>
+</section>
 
-            <button
-              onClick={() => scrollToSection("projects")}
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 hover:scale-105 transition-all duration-300 animate-fade-in-up animation-delay-800"
-            >
-              View My Work
-            </button>
-          </div>
-        </div>
-      </section>
 
       {/* About Section */}
       <section
