@@ -1,12 +1,29 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio! This repository showcases my projects, skills, and experience as a developer.
 
-Currently, two official plugins are available:
+## 🚀 Projects
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Project 1:** JobNest-Interactive job search platform with focus on performance and usability
+- **Project 2:** Smart Agriculture Robot- Automated field monitoring and irrigation system
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Skills
+
+- Programming Languages: `JavaScript`, `Python`, `Java`, etc.
+- Frameworks: `React`, `Node.js`, etc.
+- Tools: `Git`, `Docker`, `Github Actions` etc.
+
+## 📄 About Me
+
+I am a passionate developer focused on building impactful and scalable solutions.  
+Feel free to explore my work and reach out for collaboration!
+
+## 📫 Contact
+
+- [LinkedIn](https://www.linkedin.com/ajaypaudel/)
+- [Email](mailto:poudelajay547@gmail.com)
+
+---
+
+Thank you for visiting my portfolio!
