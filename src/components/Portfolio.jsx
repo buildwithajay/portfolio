@@ -405,7 +405,7 @@ export default function Portfolio() {
           </h2>
           <div className="grid lg:grid-cols-2 gap-8">
             {projects.map((project, index) => (
-              <div
+              <a href="https://job-nest-frontend.vercel.app/" target="_blank" rel="noopener noreferrer"
                 key={index}
                 className="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl hover:scale-105 transition-all duration-300 group"
               >
@@ -446,7 +446,7 @@ export default function Portfolio() {
                     ))}
                   </ul>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
