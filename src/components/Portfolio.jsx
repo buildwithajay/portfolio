@@ -29,7 +29,8 @@ export default function Portfolio() {
           </nav>
           <a
             className="bg-primary text-on-primary px-6 py-2 rounded-lg font-body-md text-body-md hover:bg-opacity-90 transition-all duration-200"
-            href="#contact"
+            href="/Resume.pdf"
+            download="My_Resume.pdf"
           >
             Resume
           </a>
@@ -271,7 +272,7 @@ export default function Portfolio() {
               clean code and architectural integrity, let's talk.
             </p>
             <div className="flex flex-col md:flex-row justify-center gap-6 relative z-10">
-              <a className="bg-on-primary text-primary px-10 py-5 font-bold hover:scale-105 transition-transform" href="mailto:ajay@example.com">
+              <a className="bg-on-primary text-primary px-10 py-5 font-bold hover:scale-105 transition-transform" href="mailto:poudelajay547@gmail.com">
                 Hire Me
               </a>
               <div className="flex items-center justify-center gap-6">
