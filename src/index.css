@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: theme("colors.canvas");
+    color: theme("colors.ink");
+  }
+
+  ::selection {
+    background: theme("colors.signal");
+    color: theme("colors.canvas");
+  }
+
+  :focus-visible {
+    outline: 2px solid theme("colors.signal");
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Faint schematic grid, used sparingly (hero only) */
+  .grid-texture {
+    background-image:
+      linear-gradient(to right, rgba(237, 239, 243, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(237, 239, 243, 0.05) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 80% 60% at 65% 30%, black 40%, transparent 100%);
+  }
+
+  .lift-hover {
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.35s ease, background-color 0.35s ease;
+  }
+
+  .lift-hover:hover {
+    transform: translateY(-4px);
+    border-color: theme("colors.faint");
+  }
+
+  .status-dot {
+    position: relative;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 999px;
+    background: theme("colors.pulse");
+  }
+
+  .status-dot::after {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border-radius: 999px;
+    background: theme("colors.pulse");
+    opacity: 0.35;
+    animation: blink 2s ease-in-out infinite;
+  }
+
+  .reveal {
+    animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+}
