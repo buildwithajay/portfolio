@@ -4,25 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Base surfaces — deep graphite console, not pure black
-        canvas: "#0E1116",
-        panel: "#151922",
-        "panel-raised": "#1B2029",
-        line: "#262B36",
-        "line-soft": "#1E232D",
-
-        // Text
-        ink: "#EDEFF3",
-        "ink-dim": "#C4C9D4",
-        muted: "#8A93A6",
-        faint: "#5B6373",
-
-        // Signal accents — amber (primary/action) + teal (data/live)
-        signal: "#FFB020",
-        "signal-dim": "#8A611C",
-        "signal-soft": "#3A2E14",
-        pulse: "#37D0C4",
-        "pulse-soft": "#12302D",
+        midnight: "#101828",
+        paper: "#F7F5F0",
+        cobalt: "#3157D5",
+        persimmon: "#F16B4A",
+        mist: "#DCE5F2",
+        leaf: "#237A57",
       },
       borderRadius: {
         DEFAULT: "0.375rem",
@@ -40,9 +27,8 @@ export default {
         "container-max": "1180px",
       },
       fontFamily: {
-        display: ["Space Grotesk", "sans-serif"],
-        body: ["Inter", "sans-serif"],
-        mono: ["JetBrains Mono", "monospace"],
+        display: ["Bricolage Grotesque", "Arial Narrow", "sans-serif"],
+        body: ["Manrope", "sans-serif"],
       },
       fontSize: {
         "display-lg": ["4rem", { lineHeight: "1.05", letterSpacing: "-0.03em", fontWeight: "600" }],
